@@ -13,11 +13,10 @@ const UserSchema = new mongoose.Schema(
             required: true,
             min: 2,
             max: 50,
-
         },
         email: {
             type: String,
-            require: true,
+            required: true,
             max: 50,
             unique: true,
         },

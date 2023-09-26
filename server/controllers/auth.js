@@ -35,6 +35,8 @@ export const register = async (req, res) => {
         
       });
       const savedUser = await newUser.save();
+      // status code 201 notifys the user that something has been created, that
+      // being the user
       res.status(201).json(savedUser);
 
     } catch (err) {
